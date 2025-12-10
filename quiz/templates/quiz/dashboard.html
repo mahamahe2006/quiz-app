@@ -1,0 +1,18 @@
+{% extends 'quiz/base.html' %}
+{% block content %}
+<h2>Dashboard</h2>
+
+<h3>Categories</h3>
+<ul>
+    {% for c in categories %}
+        <li>{{ c.name }} – <a href="{% url 'start_quiz' c.id %}">Start Quiz</a></li>
+    {% endfor %}
+</ul>
+
+<h3>Recent Results</h3>
+<ul>
+    {% for r in results %}
+        <li>{{ r.score }}/{{ r.total }} — {{ r.percentage }}%</li>
+    {% endfor %}
+</ul>
+{% endblock %}

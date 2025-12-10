@@ -1,0 +1,50 @@
+{% extends 'quiz/base.html' %}
+{% block content %}
+<h1>Welcome to the Quiz App</h1>
+<p>Please login or signup to continue.</p>
+
+<!-- LOGIN BUTTON -->
+<a href="{% url 'login' %}">
+    <button style="
+        background:#4e73df;
+        color:white;
+        padding:10px 20px;
+        border:none;
+        border-radius:6px;
+        cursor:pointer;
+        font-size:16px;
+        margin-right:10px;">
+        Login
+    </button>
+</a>
+
+<!-- SIGNUP BUTTON -->
+<a href="{% url 'signup' %}">
+    <button style="
+        background:#1cc88a;
+        color:white;
+        padding:10px 20px;
+        border:none;
+        border-radius:6px;
+        cursor:pointer;
+        font-size:16px;
+        margin-right:10px;">
+        Signup
+    </button>
+</a>
+
+<!-- DASHBOARD BUTTON (always visible) -->
+<a href="{% url 'dashboard' %}">
+    <button style="
+        background:#858796;
+        color:white;
+        padding:10px 20px;
+        border:none;
+        border-radius:6px;
+        cursor:pointer;
+        font-size:16px;">
+        Dashboard
+    </button>
+</a>
+
+{% endblock %}
