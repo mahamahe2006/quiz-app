@@ -1,0 +1,117 @@
+/* Global Styling */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f5f7fa;
+    color: #333;
+}
+
+nav {
+    background: #222;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #444;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #222;
+}
+
+/* Buttons */
+button {
+    background: #4e73df;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #2e59d9;
+}
+
+/* Question Card */
+.question {
+    background: #fdfdfd;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.question strong {
+    font-size: 18px;
+}
+
+/* Radio options */
+label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+/* Dashboard category list */
+.category-item {
+    background: #4e73df;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.category-item:hover {
+    background: #2e59d9;
+}
+
+/* Result Box */
+.result-box {
+    font-size: 20px;
+    padding: 20px;
+    background: #e8f0fe;
+    border-left: 5px solid #4e73df;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Auth forms */
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form button {
+    width: 100%;
+}
